@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcho</title>
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <script src="./assets/js/main.min.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo-link" href="./index.html">
+              <img class="header__logo" src="./assets/img/logo.webp" alt="logo" />
+            </a>
+            <div class="hamburger-menu">
+              <input class="hamburger-menu__toggle" id="hamburger-menu__toggle" type="checkbox" />
+              <label class="hamburger-menu__btn" for="hamburger-menu__toggle">
+                <span></span>
+              </label>
+
+              <nav class="header__nav">
+                <ul class="header__list">
+                  <li class="header__list-item">
+                    <a class="header__list-link" href="./index.html">HOME</a>
+                  </li>
+                  <li class="header__list-item">
+                    <a class="header__list-link" href="./shop-page.html">SHOP</a>
+                  </li>
+                  <li class="header__list-item">
+                    <a class="header__list-link" href="./404-error.html">PAGE</a>
+                  </li>
+                  <li class="header__list-item">
+                    <a class="header__list-link" href="./blog.html">BLOG</a>
+                  </li>
+                  <li class="header__list-item">
+                    <a class="header__list-link" href="./contact.html">CONTACT</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__menu">
+              <div class="header__menu-item">
+                <a class="header__menu-link" href="./register.html"
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <g>
+                      <g>
+                        <path
+                          fill="#29282d"
+                          d="M20 19.998h-1.563c0-4.652-3.785-8.436-8.437-8.436-4.653 0-8.438 3.784-8.438 8.436H0c0-2.67 1.04-5.181 2.929-7.07a9.958 9.958 0 0 1 3.8-2.384 5.779 5.779 0 0 1-2.51-4.764A5.788 5.788 0 0 1 9.999 0a5.788 5.788 0 0 1 5.782 5.781c0 1.975-.995 3.72-2.51 4.764a9.958 9.958 0 0 1 3.8 2.384A9.935 9.935 0 0 1 20 19.998zm-10-10a4.224 4.224 0 0 0 4.219-4.218 4.223 4.223 0 0 0-4.22-4.219 4.223 4.223 0 0 0-4.218 4.22A4.224 4.224 0 0 0 10 9.998z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="header__menu-item">
+                <a class="header__menu-link" href=""
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <g>
+                      <g>
+                        <path
+                          fill="#29282d"
+                          d="M19.892 19.286l-.59.589a.416.416 0 0 1-.588 0l-5.81-5.81A7.879 7.879 0 0 1 7.93 15.83c-4.366 0-7.917-3.552-7.917-7.916 0-4.366 3.551-7.917 7.917-7.917 4.365 0 7.916 3.55 7.916 7.917a7.878 7.878 0 0 1-1.765 4.973l5.81 5.81a.416.416 0 0 1 0 .589zM14.181 7.914a6.257 6.257 0 0 0-6.25-6.25 6.257 6.257 0 0 0-6.25 6.25 6.256 6.256 0 0 0 6.25 6.25 6.257 6.257 0 0 0 6.25-6.25z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="header__menu-item">
+                <a class="header__menu-link" href="#"
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <g>
+                      <g>
+                        <path
+                          fill="#29282d"
+                          d="M17.777 11.803a228.502 228.502 0 0 1-4.216 4.966c-2.682 3.056-3.065 3.225-3.449 3.225h-.17c-.383 0-.809-.169-3.492-3.183-1.405-1.57-3.108-3.565-4.215-4.965C-.235 8.748-.192 6.2.276 4.63.957 2.254 2.959.81 4.449.26c1.703-.553 3.747 0 5.578 1.57C11.858.217 13.902-.378 15.605.217c1.49.508 3.492 1.951 4.173 4.37.469 1.57.469 4.118-2.001 7.215zm.426-6.706c-.511-1.782-2.002-2.843-3.109-3.268-1.234-.424-2.895.213-4.428 1.655-.043.086-.128.128-.213.17a.846.846 0 0 1-1.065-.126C7.856 2.042 6.195 1.405 4.96 1.873c-1.107.381-2.598 1.442-3.108 3.224-.511 1.74.085 3.693 1.703 5.687 1.959 2.462 5.322 6.324 6.472 7.386 1.15-1.062 4.514-4.924 6.473-7.386 1.618-1.994 2.214-3.989 1.703-5.686z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+                <div class="header__menu-num">3</div>
+              </div>
+              <div class="header__menu-item">
+                <a class="header__menu-link" href="#"
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                    <g>
+                      <g>
+                        <path
+                          fill="#29282d"
+                          d="M17.436 19.997c-1.513 0-2.744-1.221-2.744-2.724 0-1.502 1.23-2.725 2.744-2.725 1.513 0 2.743 1.223 2.743 2.725 0 1.503-1.23 2.724-2.743 2.724zm0-3.814c-.606 0-1.098.49-1.098 1.09 0 .6.492 1.09 1.098 1.09.605 0 1.097-.49 1.097-1.09 0-.6-.492-1.09-1.097-1.09zm1.756-2.806H6.379a.822.822 0 0 1-.8-.628L2.902 1.634H.837A.82.82 0 0 1 .014.817a.82.82 0 0 1 .823-.818h2.716c.38 0 .712.26.8.628l.741 3.077h16.1c.254 0 .493.116.649.314a.815.815 0 0 1 .15.7l-2.002 8.038a.822.822 0 0 1-.8.62zM7.029 11.742h11.519l1.595-6.402H5.488zm.447 8.255c-1.513 0-2.743-1.221-2.743-2.724 0-1.502 1.23-2.725 2.743-2.725s2.744 1.223 2.744 2.725c0 1.503-1.23 2.724-2.744 2.724zm0-3.814c-.605 0-1.097.49-1.097 1.09 0 .6.492 1.09 1.097 1.09.606 0 1.098-.49 1.098-1.09 0-.6-.492-1.09-1.098-1.09z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+                <div class="header__menu-num">3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="breadcrumbs">
+          <div class="breadcrumbs__container">
+            <div class="container">
+              <h3 class="breadcrumbs__title">BLOG DETAILS</h3>
+              <div class="breadcrumbs__list">
+                <a class="breadcrumbs__item" href="">Home</a>
+                <a class="breadcrumbs__item" href="">Blog page</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="blogs">
+          <div class="container">
+            <div class="blogs__inner">
+              <section class="blogs__content">
+                <div class="blogs__content-item content-item blogs-detail__content-item">
+                  <div class="content-item__img-box">
+                    <img class="content-item__img" src="./assets/img/blogs/1.jpg" alt="" />
+                  </div>
+                  <div class="content-item__box">
+                    <div class="content-item__description">
+                      <div class="content-item__description-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                          <g>
+                            <g>
+                              <path
+                                fill="#fe3e57"
+                                d="M16 3.124v11A1.877 1.877 0 0 1 14.125 16H1.875A1.877 1.877 0 0 1 0 14.124v-11C0 2.09.84 1.25 1.875 1.25h.75V0h1.25v1.25h8.25V0h1.25v1.25h.75C15.159 1.25 16 2.09 16 3.124zm-14.75 0v1.5h13.5v-1.5a.626.626 0 0 0-.625-.625h-.75v1.25h-1.25V2.5h-8.25v1.25h-1.25V2.5h-.75a.626.626 0 0 0-.625.625zm13.5 11v-8.25H1.25v8.25c0 .345.28.625.625.625h12.25c.345 0 .625-.28.625-.625zM2.375 7.187h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm-10 2.5h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm-7.5 2.5h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5-2.5h1.25v1.25h-1.25z"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                        <span>16 February, 2020</span>
+                      </div>
+                      <div class="content-item__description-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                          <g>
+                            <g>
+                              <path
+                                fill="#fe3e57"
+                                d="M16 .625V13c0 .345-.28.624-.625.624h-5.53L8.527 15.71a.625.625 0 0 1-1.056 0l-1.317-2.085H.625A.625.625 0 0 1 0 13V.625C0 .28.28 0 .625 0h14.75c.345 0 .625.28.625.625zm-1.25.625H1.25v11.125H6.5c.214 0 .414.11.528.29L8 14.206l.971-1.54a.625.625 0 0 1 .529-.29h5.25zM7.219 6.812a.781.781 0 1 1 1.562 0 .781.781 0 0 1-1.562 0zm-3.125 0a.781.781 0 1 1 1.562 0 .781.781 0 0 1-1.562 0zm6.25 0a.781.781 0 1 1 1.562 0 .781.781 0 0 1-1.562 0z"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                        <span>3 comments</span>
+                      </div>
+                      <div class="content-item__description-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                          <g>
+                            <g>
+                              <path
+                                fill="#fe3e57"
+                                d="M16 16h-1.25A6.758 6.758 0 0 0 8 9.25 6.758 6.758 0 0 0 1.25 16H0c0-2.137.832-4.146 2.343-5.657a7.975 7.975 0 0 1 3.04-1.907 4.623 4.623 0 0 1-2.008-3.811A4.63 4.63 0 0 1 8 0a4.63 4.63 0 0 1 4.625 4.625c0 1.58-.796 2.976-2.008 3.811a7.974 7.974 0 0 1 3.04 1.907A7.947 7.947 0 0 1 16 16zM8 8a3.379 3.379 0 0 0 3.375-3.375A3.379 3.379 0 0 0 8 1.25a3.379 3.379 0 0 0-3.375 3.375A3.379 3.379 0 0 0 8 8z"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                        <span>By Admin</span>
+                      </div>
+                    </div>
+                    <a class="content-item__link" href="">In Particular The Global World Of Lorem Ipsum Asap Tempor</a>
+                    <p class="content-item__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra maycenas acchmsan lacus vel facilisis.
+                    </p>
+                    <div class="content-item__quote">
+                      <span
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing elt, sed does eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua dilo. Quis ipsum suspendisse ultrices gravida.</span
+                      >
+                    </div>
+                    <p class="content-item__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra maycenas acchmsan lacus vel facilisis.
+                    </p>
+                    <div class="content-item__img-text">
+                      <img class="content-item__image" src="./assets/img/blogs/image-inside.jpg" alt="" />
+                      <p class="content-item__text">
+                        Lorem ipsum dolor sit amet, consectur picing elit, sed do eusmod tempor incididunt ut mor more labore a doore magna
+                        aliqua. Quis into ipsum the suspendisse ultrices grda. Lorem in ipsum dolor sit amet, consectetur adipiscings elit,
+                        sed does eiusmod tempor incididunt mod labore et dolore magna aliqua. Quis ipsum in suspendisse fass a ultrices
+                        gravida. Loremon ipsum dolor st amaiet, consectetur aipiscinge elit, sed do eiusobimod tempor incididunt uts labore
+                        et doloroe gravida.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="blogs__social">
+                  <div class="blogs__social-item">
+                    <h5 class="blogs__social-title">TAGS:</h5>
+                    <a class="blogs__social-link" href="">Fashion</a>
+                    <a class="blogs__social-link" href="">Style</a>
+                  </div>
+                  <div class="blogs__social-item">
+                    <h5 class="blogs__social-title">SHARE:</h5>
+                    <a class="blogs__social-link" href="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                        <path
+                          d="M14.355 4.742c.012.14.012.285.012.426 0 4.336-3.3 9.328-9.332 9.328A9.266 9.266 0 0 1 0 13.027c.266.028.52.04.793.04 1.531 0 2.941-.52 4.07-1.403a3.286 3.286 0 0 1-3.066-2.273c.203.03.406.05.621.05.293 0 .586-.039.86-.113a3.278 3.278 0 0 1-2.63-3.215V6.07c.438.246.946.399 1.485.418a3.278 3.278 0 0 1-1.461-2.73c0-.61.16-1.168.445-1.656a9.315 9.315 0 0 0 6.762 3.43 3.676 3.676 0 0 1-.082-.75 3.277 3.277 0 0 1 3.277-3.278c.946 0 1.797.394 2.399 1.035a6.554 6.554 0 0 0 2.082-.793 3.285 3.285 0 0 1-1.442 1.809A6.67 6.67 0 0 0 16 3.047a7.059 7.059 0 0 1-1.645 1.695zm0 0"
+                          fill="#8d8d8d"
+                        />
+                      </svg>
+                    </a>
+                    <a class="blogs__social-link" href="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16">
+                        <path
+                          d="M3.133 14H.23V4.652h2.903zM1.68 3.379c-.926 0-1.68-.77-1.68-1.7a1.682 1.682 0 0 1 3.363 0c0 .93-.754 1.7-1.683 1.7zM13.996 14h-2.894V9.45c0-1.083-.024-2.473-1.512-2.473-1.508 0-1.738 1.175-1.738 2.394V14H4.953V4.652h2.781V5.93h.043c.387-.735 1.332-1.512 2.746-1.512 2.938 0 3.477 1.934 3.477 4.45V14zm0 0"
+                          fill="#8d8d8d"
+                        />
+                      </svg>
+                    </a>
+                    <a class="blogs__social-link" href="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 15">
+                        <path
+                          d="M15 7.672c0 4.144-2.977 7.094-7.379 7.094C3.406 14.766 0 11.52 0 7.5S3.406.234 7.621.234c2.055 0 3.781.72 5.113 1.903L10.66 4.039C7.945 1.54 2.898 3.414 2.898 7.5c0 2.535 2.125 4.586 4.723 4.586 3.02 0 4.152-2.059 4.328-3.129H7.621v-2.5h7.258c.07.371.121.73.121 1.215zm0 0"
+                          fill="#8d8d8d"
+                        />
+                      </svg>
+                    </a>
+                    <a class="blogs__social-link" href="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16">
+                        <path
+                          d="M6.375.203C3.168.203 0 2.34 0 5.801 0 8 1.238 9.25 1.988 9.25c.309 0 .489-.863.489-1.105 0-.293-.743-.91-.743-2.122 0-2.511 1.914-4.293 4.387-4.293 2.129 0 3.703 1.211 3.703 3.434 0 1.656-.664 4.77-2.82 4.77-.777 0-1.445-.563-1.445-1.368 0-1.183.824-2.324.824-3.543 0-2.07-2.934-1.695-2.934.805 0 .524.067 1.106.301 1.586-.43 1.856-1.313 4.621-1.313 6.531 0 .594.086 1.172.141 1.766.106.117.055.105.215.047 1.574-2.156 1.52-2.578 2.23-5.403.387.73 1.38 1.125 2.168 1.125C10.508 11.48 12 8.246 12 5.332 12 2.227 9.32.203 6.375.203zm0 0"
+                          fill="#8d8d8d"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="blogs__author">
+                  <img class="blogs__author-img" src="./assets/img/blogs/julian.jpg" alt="" />
+                  <div class="blogs__author-content">
+                    <h4 class="blogs__author-name">JHON DOE</h4>
+                    <p class="blogs__author-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo dajsna for tempor incididunt ut labore et
+                      dolore magna aliqua. Quis ipsum more in the a mo spendisse ultrices gravida. Risus commodo.
+                    </p>
+                  </div>
+                </div>
+                <div class="blogs__comments">
+                  <h4 class="blogs__comments-title">COMMENTS</h4>
+                  <div class="blogs__comments-item">
+                    <img class="blogs__comments-img" src="./assets/img/blogs/comments-1.png" alt="" />
+                    <div class="blogs__comments-box">
+                      <div class="blogs__name-date">
+                        <h6 class="blogs__comments-name">Michle Jhon</h6>
+                        |
+                        <p class="blogs__comments-text">2 days ago</p>
+                      </div>
+                      <p class="blogs__comments-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.
+                      </p>
+                      <a class="blogs__comments-reply" href=""
+                        ><svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                          <g>
+                            <g>
+                              <path
+                                fill="#8d8d8d"
+                                d="M5.835 3.67V.202L0 6.269l5.834 6.066V8.782c4.167 0 7.084 1.387 9.167 4.42-.833-4.333-3.334-8.666-9.167-9.533z"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                        Reply
+                      </a>
+                    </div>
+                  </div>
+                  <div class="blogs__comments-item">
+                    <img class="blogs__comments-img" src="./assets/img/blogs/comments-2.png" alt="" />
+                    <div class="blogs__comments-box">
+                      <div class="blogs__name-date">
+                        <h6 class="blogs__comments-name">Michle Jhon</h6>
+                        |
+                        <p class="blogs__comments-text">2 days ago</p>
+                      </div>
+                      <p class="blogs__comments-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.
+                      </p>
+                      <a class="blogs__comments-reply" href=""
+                        ><svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                          <g>
+                            <g>
+                              <path
+                                fill="#8d8d8d"
+                                d="M5.835 3.67V.202L0 6.269l5.834 6.066V8.782c4.167 0 7.084 1.387 9.167 4.42-.833-4.333-3.334-8.666-9.167-9.533z"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                        Reply
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="blogs-reply">
+                  <h4 class="blogs-reply__title">LEAVE A REPLY</h4>
+                  <form class="blogs-reply__form" action="">
+                    <div class="blogs-reply__input-box">
+                      <input class="blogs-reply__input" type="text" placeholder="Your name" />
+                      <input class="blogs-reply__input" type="text" placeholder="E-mail address" />
+                    </div>
+                    <textarea class="blogs-reply__input-text" placeholder="Your text here"></textarea>
+                    <button class="blogs-reply__btn btn" type="submit">POST COMMENT</button>
+                  </form>
+                </div>
+              </section>
+              <aside class="blogs__sidebar sidebar">
+                <div class="sidebar__item sidebar__search">
+                  <h4 class="sidebar__title">Search</h4>
+                  <form class="sidebar__search-form" action="">
+                    <input class="sidebar__search-input" type="text" placeholder="Search your keyword...." />
+                    <input class="sidebar__search-btn" type="button" />
+                  </form>
+                </div>
+                <div class="sidebar__item sidebar__item-author">
+                  <img class="sidebar__img" src="./assets/img/sidebar/christian.jpg" alt="" />
+                  <h4 class="sidebar__name">Tom D. Maianay</h4>
+                  <p class="sidebar__designation">CEO & Founder</p>
+                  <p class="sidebar__text">
+                    Lorem ipsum dolor sit amet, consectetum adipiscing eit, sed do eiusmod temporary incididunt ut labore et dolore magnaamo
+                    aliqua. Qus ipsum suspendisse ultrices an gravida. Risus commodo
+                  </p>
+                  <div class="sidebar__social-box">
+                    <a class="sidebar__social" href="https://rkn.gov.ru/images/news/image34253.jpg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 17">
+                        <path
+                          d="M9.594 9.563l.492-3.079H7.027V4.488c0-.84.426-1.66 1.797-1.66h1.39V.207S8.955 0 7.747 0c-2.516 0-4.16 1.473-4.16 4.14v2.344h-2.8v3.079h2.8V17h3.441V9.562zm0 0"
+                          fill="#8d8d8d"
+                        />
+                      </svg>
+                    </a>
+                    <a class="sidebar__social" href="https://rkn.gov.ru/images/news/image34253.jpg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                        <path
+                          d="M14.355 4.742c.012.14.012.285.012.426 0 4.336-3.3 9.328-9.332 9.328A9.266 9.266 0 0 1 0 13.027c.266.028.52.04.793.04 1.531 0 2.941-.52 4.07-1.403a3.286 3.286 0 0 1-3.066-2.273c.203.03.406.05.621.05.293 0 .586-.039.86-.113a3.278 3.278 0 0 1-2.63-3.215V6.07c.438.246.946.399 1.485.418a3.278 3.278 0 0 1-1.461-2.73c0-.61.16-1.168.445-1.656a9.315 9.315 0 0 0 6.762 3.43 3.676 3.676 0 0 1-.082-.75 3.277 3.277 0 0 1 3.277-3.278c.946 0 1.797.394 2.399 1.035a6.554 6.554 0 0 0 2.082-.793 3.285 3.285 0 0 1-1.442 1.809A6.67 6.67 0 0 0 16 3.047a7.059 7.059 0 0 1-1.645 1.695zm0 0"
+                          fill="#8d8d8d"
+                        />
+                      </svg>
+                    </a>
+                    <a class="sidebar__social" href="https://rkn.gov.ru/images/news/image34253.jpg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="14px"
+                        height="16px"
+                        viewBox="0 0 14 16"
+                        version="1.1"
+                      >
+                        <g id="surface1">
+                          <path
+                            style="stroke: none; fill-rule: nonzero; fill-opacity: 1"
+                            d="M 7.003906 4.40625 C 5.015625 4.40625 3.414062 6.007812 3.414062 7.996094 C 3.414062 9.984375 5.015625 11.585938 7.003906 11.585938 C 8.992188 11.585938 10.59375 9.984375 10.59375 7.996094 C 10.59375 6.007812 8.992188 4.40625 7.003906 4.40625 Z M 7.003906 10.332031 C 5.71875 10.332031 4.667969 9.285156 4.667969 7.996094 C 4.667969 6.710938 5.714844 5.664062 7.003906 5.664062 C 8.289062 5.664062 9.335938 6.710938 9.335938 7.996094 C 9.335938 9.285156 8.289062 10.332031 7.003906 10.332031 Z M 11.578125 4.257812 C 11.578125 4.726562 11.203125 5.097656 10.742188 5.097656 C 10.273438 5.097656 9.902344 4.722656 9.902344 4.257812 C 9.902344 3.796875 10.277344 3.421875 10.742188 3.421875 C 11.203125 3.421875 11.578125 3.796875 11.578125 4.257812 Z M 13.957031 5.109375 C 13.902344 3.988281 13.648438 2.992188 12.824219 2.175781 C 12.007812 1.355469 11.011719 1.101562 9.890625 1.042969 C 8.734375 0.976562 5.269531 0.976562 4.113281 1.042969 C 2.992188 1.097656 2 1.351562 1.179688 2.171875 C 0.355469 2.992188 0.101562 3.984375 0.046875 5.105469 C -0.0195312 6.261719 -0.0195312 9.726562 0.046875 10.882812 C 0.101562 12.007812 0.355469 13 1.179688 13.820312 C 2 14.636719 2.992188 14.894531 4.113281 14.949219 C 5.269531 15.015625 8.734375 15.015625 9.890625 14.949219 C 11.011719 14.898438 12.007812 14.640625 12.824219 13.820312 C 13.644531 13 13.898438 12.007812 13.957031 10.882812 C 14.023438 9.726562 14.023438 6.265625 13.957031 5.109375 Z M 12.460938 12.125 C 12.21875 12.738281 11.746094 13.210938 11.132812 13.457031 C 10.210938 13.820312 8.023438 13.738281 7.003906 13.738281 C 5.984375 13.738281 3.792969 13.820312 2.875 13.457031 C 2.261719 13.210938 1.789062 12.742188 1.542969 12.125 C 1.179688 11.203125 1.261719 9.015625 1.261719 7.996094 C 1.261719 6.976562 1.179688 4.789062 1.542969 3.867188 C 1.789062 3.257812 2.257812 2.785156 2.875 2.539062 C 3.796875 2.171875 5.984375 2.257812 7.003906 2.257812 C 8.023438 2.257812 10.210938 2.175781 11.132812 2.539062 C 11.742188 2.78125 12.214844 3.253906 12.460938 3.867188 C 12.828125 4.789062 12.742188 6.976562 12.742188 7.996094 C 12.742188 9.015625 12.828125 11.207031 12.460938 12.125 Z M 12.460938 12.125 "
+                            fill="#8d8d8d"
+                          />
+                        </g>
+                      </svg>
+                    </a>
+                    <a class="sidebar__social" href="https://rkn.gov.ru/images/news/image34253.jpg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16">
+                        <path
+                          d="M6.375.203C3.168.203 0 2.34 0 5.801 0 8 1.238 9.25 1.988 9.25c.309 0 .489-.863.489-1.105 0-.293-.743-.91-.743-2.122 0-2.511 1.914-4.293 4.387-4.293 2.129 0 3.703 1.211 3.703 3.434 0 1.656-.664 4.77-2.82 4.77-.777 0-1.445-.563-1.445-1.368 0-1.183.824-2.324.824-3.543 0-2.07-2.934-1.695-2.934.805 0 .524.067 1.106.301 1.586-.43 1.856-1.313 4.621-1.313 6.531 0 .594.086 1.172.141 1.766.106.117.055.105.215.047 1.574-2.156 1.52-2.578 2.23-5.403.387.73 1.38 1.125 2.168 1.125C10.508 11.48 12 8.246 12 5.332 12 2.227 9.32.203 6.375.203zm0 0"
+                          fill="#8d8d8d"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="sidebar__item sidebar__latest-post">
+                  <h4 class="sidebar__title">Latest Post</h4>
+                  <div class="sidebar__post-box">
+                    <div class="sidebar__post">
+                      <img class="sidebar__post-img" src="./assets/img/sidebar/1.jpg" alt="" />
+                      <div class="sidebar__post-content">
+                        <p class="sidebar__post-text">Lorem ipsum dolor suitabl amet, adiping elit.</p>
+                        <div class="sidebar__post-date">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <g>
+                              <g>
+                                <path
+                                  fill="#fe3e57"
+                                  d="M16 3.124v11A1.877 1.877 0 0 1 14.125 16H1.875A1.877 1.877 0 0 1 0 14.124v-11C0 2.09.84 1.25 1.875 1.25h.75V0h1.25v1.25h8.25V0h1.25v1.25h.75C15.159 1.25 16 2.09 16 3.124zm-14.75 0v1.5h13.5v-1.5a.626.626 0 0 0-.625-.625h-.75v1.25h-1.25V2.5h-8.25v1.25h-1.25V2.5h-.75a.626.626 0 0 0-.625.625zm13.5 11v-8.25H1.25v8.25c0 .345.28.625.625.625h12.25c.345 0 .625-.28.625-.625zM2.375 7.187h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm-10 2.5h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm-7.5 2.5h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5-2.5h1.25v1.25h-1.25z"
+                                />
+                              </g>
+                            </g>
+                          </svg>
+                          <span>16 Feb, 2019</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sidebar__post">
+                      <img class="sidebar__post-img" src="./assets/img/sidebar/2.jpg" alt="" />
+                      <div class="sidebar__post-content">
+                        <p class="sidebar__post-text">Lorem ipsum dolor suitabl amet, adiping elit.</p>
+                        <div class="sidebar__post-date">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <g>
+                              <g>
+                                <path
+                                  fill="#fe3e57"
+                                  d="M16 3.124v11A1.877 1.877 0 0 1 14.125 16H1.875A1.877 1.877 0 0 1 0 14.124v-11C0 2.09.84 1.25 1.875 1.25h.75V0h1.25v1.25h8.25V0h1.25v1.25h.75C15.159 1.25 16 2.09 16 3.124zm-14.75 0v1.5h13.5v-1.5a.626.626 0 0 0-.625-.625h-.75v1.25h-1.25V2.5h-8.25v1.25h-1.25V2.5h-.75a.626.626 0 0 0-.625.625zm13.5 11v-8.25H1.25v8.25c0 .345.28.625.625.625h12.25c.345 0 .625-.28.625-.625zM2.375 7.187h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm-10 2.5h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm-7.5 2.5h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5-2.5h1.25v1.25h-1.25z"
+                                />
+                              </g>
+                            </g>
+                          </svg>
+                          <span>16 Feb, 2019</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sidebar__post">
+                      <img class="sidebar__post-img" src="./assets/img/sidebar/3.jpg" alt="" />
+                      <div class="sidebar__post-content">
+                        <p class="sidebar__post-text">Lorem ipsum dolor suitabl amet, adiping elit.</p>
+                        <div class="sidebar__post-date">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <g>
+                              <g>
+                                <path
+                                  fill="#fe3e57"
+                                  d="M16 3.124v11A1.877 1.877 0 0 1 14.125 16H1.875A1.877 1.877 0 0 1 0 14.124v-11C0 2.09.84 1.25 1.875 1.25h.75V0h1.25v1.25h8.25V0h1.25v1.25h.75C15.159 1.25 16 2.09 16 3.124zm-14.75 0v1.5h13.5v-1.5a.626.626 0 0 0-.625-.625h-.75v1.25h-1.25V2.5h-8.25v1.25h-1.25V2.5h-.75a.626.626 0 0 0-.625.625zm13.5 11v-8.25H1.25v8.25c0 .345.28.625.625.625h12.25c.345 0 .625-.28.625-.625zM2.375 7.187h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm-10 2.5h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm-7.5 2.5h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5-2.5h1.25v1.25h-1.25z"
+                                />
+                              </g>
+                            </g>
+                          </svg>
+                          <span>16 Feb, 2019</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sidebar__post">
+                      <img class="sidebar__post-img" src="./assets/img/sidebar/4.jpg" alt="" />
+                      <div class="sidebar__post-content">
+                        <p class="sidebar__post-text">Lorem ipsum dolor suitabl amet, adiping elit.</p>
+                        <div class="sidebar__post-date">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <g>
+                              <g>
+                                <path
+                                  fill="#fe3e57"
+                                  d="M16 3.124v11A1.877 1.877 0 0 1 14.125 16H1.875A1.877 1.877 0 0 1 0 14.124v-11C0 2.09.84 1.25 1.875 1.25h.75V0h1.25v1.25h8.25V0h1.25v1.25h.75C15.159 1.25 16 2.09 16 3.124zm-14.75 0v1.5h13.5v-1.5a.626.626 0 0 0-.625-.625h-.75v1.25h-1.25V2.5h-8.25v1.25h-1.25V2.5h-.75a.626.626 0 0 0-.625.625zm13.5 11v-8.25H1.25v8.25c0 .345.28.625.625.625h12.25c.345 0 .625-.28.625-.625zM2.375 7.187h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm-10 2.5h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm-7.5 2.5h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5 0h1.25v1.25h-1.25zm2.5-2.5h1.25v1.25h-1.25z"
+                                />
+                              </g>
+                            </g>
+                          </svg>
+                          <span>16 Feb, 2019</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sidebar__item sidebar__category">
+                  <h4 class="sidebar__title">CATEGORY</h4>
+                  <form class="sidebar__category-form" action="">
+                    <label class="sidebar__category-label">
+                      <input type="checkbox" class="sidebar__category-input" />
+                      <div class="sidebar__category-text">
+                        <span>Woman</span>
+                        <span>48</span>
+                      </div>
+                    </label>
+                    <label class="sidebar__category-label">
+                      <input type="checkbox" class="sidebar__category-input" />
+                      <div class="sidebar__category-text">
+                        <span>Man</span>
+                        <span>30</span>
+                      </div>
+                    </label>
+                    <label class="sidebar__category-label">
+                      <input type="checkbox" class="sidebar__category-input" />
+                      <div class="sidebar__category-text">
+                        <span>Sale Products</span>
+                        <span>92</span>
+                      </div>
+                    </label>
+                    <label class="sidebar__category-label">
+                      <input type="checkbox" class="sidebar__category-input" />
+                      <div class="sidebar__category-text">
+                        <span>Fashion</span>
+                        <span>121</span>
+                      </div>
+                    </label>
+                    <label class="sidebar__category-label">
+                      <input type="checkbox" class="sidebar__category-input" />
+                      <div class="sidebar__category-text">
+                        <span>Hot Dresses</span>
+                        <span>52</span>
+                      </div>
+                    </label>
+                    <label class="sidebar__category-label">
+                      <input type="checkbox" class="sidebar__category-input" />
+                      <div class="sidebar__category-text">
+                        <span>Accessories</span>
+                        <span>88</span>
+                      </div>
+                    </label>
+                  </form>
+                </div>
+                <div class="sidebar__item sidebar__tags">
+                  <h4 class="sidebar__title">Popular Tags</h4>
+                  <form class="sidebar__tags-form" action="">
+                    <label class="sidebar__tags-label">
+                      <input type="checkbox" class="sidebar__tags-input" />
+                      <span class="sidebar__tags-text"> Sweetshirt </span>
+                    </label>
+                    <label class="sidebar__tags-label">
+                      <input type="checkbox" class="sidebar__tags-input" />
+                      <span class="sidebar__tags-text"> Man Accessories </span>
+                    </label>
+                    <label class="sidebar__tags-label">
+                      <input type="checkbox" class="sidebar__tags-input" />
+                      <span class="sidebar__tags-text"> Fashion </span>
+                    </label>
+                    <label class="sidebar__tags-label">
+                      <input type="checkbox" class="sidebar__tags-input" />
+                      <span class="sidebar__tags-text"> Polo </span>
+                    </label>
+                    <label class="sidebar__tags-label">
+                      <input type="checkbox" class="sidebar__tags-input" />
+                      <span class="sidebar__tags-text"> T-Shirt </span>
+                    </label>
+                    <label class="sidebar__tags-label">
+                      <input type="checkbox" class="sidebar__tags-input" />
+                      <span class="sidebar__tags-text"> Jewellery </span>
+                    </label>
+                  </form>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__contant">
+              <a class="footer__contant-logo" href="./index.html">
+                <img class="footer__logo" src="./assets/img/footer_logo.webp" alt="footer logo" />
+              </a>
+
+              <div class="footer__contant-content">
+                <a class="footer__adress" href="https://goo.gl/maps/LVFMTo2FL1HLJFUv6">No. 342 - London Oxford Street, 012 United States</a>
+                <a class="footer__email" href="mailto:Youremail@gmail.com">Youremail@gmail.com</a>
+                <a class="footer__phone" href="tel:+02838388393">+0283 838 8393</a>
+              </div>
+              <div class="footer__contant-social">
+                <a class="footer__contant-link" href="https://rkn.gov.ru/images/news/image34253.jpg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 17">
+                    <path
+                      d="M9.594 9.563l.492-3.079H7.027V4.488c0-.84.426-1.66 1.797-1.66h1.39V.207S8.955 0 7.747 0c-2.516 0-4.16 1.473-4.16 4.14v2.344h-2.8v3.079h2.8V17h3.441V9.562zm0 0"
+                      fill="#8d8d8d"
+                    />
+                  </svg>
+                </a>
+                <a class="footer__contant-link" href="https://rkn.gov.ru/images/news/image34253.jpg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path
+                      d="M14.355 4.742c.012.14.012.285.012.426 0 4.336-3.3 9.328-9.332 9.328A9.266 9.266 0 0 1 0 13.027c.266.028.52.04.793.04 1.531 0 2.941-.52 4.07-1.403a3.286 3.286 0 0 1-3.066-2.273c.203.03.406.05.621.05.293 0 .586-.039.86-.113a3.278 3.278 0 0 1-2.63-3.215V6.07c.438.246.946.399 1.485.418a3.278 3.278 0 0 1-1.461-2.73c0-.61.16-1.168.445-1.656a9.315 9.315 0 0 0 6.762 3.43 3.676 3.676 0 0 1-.082-.75 3.277 3.277 0 0 1 3.277-3.278c.946 0 1.797.394 2.399 1.035a6.554 6.554 0 0 0 2.082-.793 3.285 3.285 0 0 1-1.442 1.809A6.67 6.67 0 0 0 16 3.047a7.059 7.059 0 0 1-1.645 1.695zm0 0"
+                      fill="#8d8d8d"
+                    />
+                  </svg>
+                </a>
+                <a class="footer__contant-link" href="https://rkn.gov.ru/images/news/image34253.jpg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16">
+                    <path
+                      d="M3.133 14H.23V4.652h2.903zM1.68 3.379c-.926 0-1.68-.77-1.68-1.7a1.682 1.682 0 0 1 3.363 0c0 .93-.754 1.7-1.683 1.7zM13.996 14h-2.894V9.45c0-1.083-.024-2.473-1.512-2.473-1.508 0-1.738 1.175-1.738 2.394V14H4.953V4.652h2.781V5.93h.043c.387-.735 1.332-1.512 2.746-1.512 2.938 0 3.477 1.934 3.477 4.45V14zm0 0"
+                      fill="#8d8d8d"
+                    />
+                  </svg>
+                </a>
+                <a class="footer__contant-link" href="https://rkn.gov.ru/images/news/image34253.jpg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 15">
+                    <path
+                      d="M15 7.672c0 4.144-2.977 7.094-7.379 7.094C3.406 14.766 0 11.52 0 7.5S3.406.234 7.621.234c2.055 0 3.781.72 5.113 1.903L10.66 4.039C7.945 1.54 2.898 3.414 2.898 7.5c0 2.535 2.125 4.586 4.723 4.586 3.02 0 4.152-2.059 4.328-3.129H7.621v-2.5h7.258c.07.371.121.73.121 1.215zm0 0"
+                      fill="#8d8d8d"
+                    />
+                  </svg>
+                </a>
+                <a class="footer__contant-link" href="https://rkn.gov.ru/images/news/image34253.jpg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16">
+                    <path
+                      d="M6.375.203C3.168.203 0 2.34 0 5.801 0 8 1.238 9.25 1.988 9.25c.309 0 .489-.863.489-1.105 0-.293-.743-.91-.743-2.122 0-2.511 1.914-4.293 4.387-4.293 2.129 0 3.703 1.211 3.703 3.434 0 1.656-.664 4.77-2.82 4.77-.777 0-1.445-.563-1.445-1.368 0-1.183.824-2.324.824-3.543 0-2.07-2.934-1.695-2.934.805 0 .524.067 1.106.301 1.586-.43 1.856-1.313 4.621-1.313 6.531 0 .594.086 1.172.141 1.766.106.117.055.105.215.047 1.574-2.156 1.52-2.578 2.23-5.403.387.73 1.38 1.125 2.168 1.125C10.508 11.48 12 8.246 12 5.332 12 2.227 9.32.203 6.375.203zm0 0"
+                      fill="#8d8d8d"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="footer__useful-links">
+              <h5 class="footer__subtitle">Useful Links</h5>
+              <div class="footer__links">
+                <a class="footer__link-item" href="./contact.html">About Us</a>
+                <a class="footer__link-item" href="#">Privacy Policy</a>
+                <a class="footer__link-item" href="#">Terms & Conditions</a>
+                <a class="footer__link-item" href="#">Contact Us</a>
+                <a class="footer__link-item" href="#">Help & Support</a>
+              </div>
+            </div>
+            <div class="footer__account">
+              <h5 class="footer__subtitle">My Account</h5>
+              <div class="footer__links">
+                <a class="footer__link-item" href="./404-error.html">My Account</a>
+                <a class="footer__link-item" href="#">My Cart</a>
+                <a class="footer__link-item" href="#">My WIshlist</a>
+                <a class="footer__link-item" href="./register.html">Registration</a>
+                <a class="footer__link-item" href="#">Check Out</a>
+              </div>
+            </div>
+            <div class="footer__subscribe">
+              <h5 class="footer__subtitle">Subscribe Our Newsletter</h5>
+              <p class="footer__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis ipsum suspendisse ultrices gravida.
+              </p>
+              <form class="footer__form" action="">
+                <input class="footer__input" placeholder="Your email address" type="text" />
+                <button class="footer__btn">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copyright">© 2019 CodeAstrology. All Rights Reserved.</div>
+            <div class="footer__payments">
+              <p class="footer__payments-text">We Accept</p>
+              <img class="footer__payments-img" src="./assets/img/icons/mastercard.webp" alt="mastercard" />
+              <img class="footer__payments-img" src="./assets/img/icons/visa.webp" alt="visa" />
+              <img class="footer__payments-img" src="./assets/img/icons/paypal.webp" alt="paypal" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

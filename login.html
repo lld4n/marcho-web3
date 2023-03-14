@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcho</title>
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <script src="./assets/js/main.min.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo-link" href="./index.html">
+              <img class="header__logo" src="./assets/img/logo.webp" alt="logo" />
+            </a>
+            <div class="hamburger-menu">
+              <input class="hamburger-menu__toggle" id="hamburger-menu__toggle" type="checkbox" />
+              <label class="hamburger-menu__btn" for="hamburger-menu__toggle">
+                <span></span>
+              </label>
+
+              <nav class="header__nav">
+                <ul class="header__list">
+                  <li class="header__list-item">
+                    <a class="header__list-link" href="./index.html">HOME</a>
+                  </li>
+                  <li class="header__list-item">
+                    <a class="header__list-link" href="./shop-page.html">SHOP</a>
+                  </li>
+                  <li class="header__list-item">
+                    <a class="header__list-link" href="./404-error.html">PAGE</a>
+                  </li>
+                  <li class="header__list-item">
+                    <a class="header__list-link" href="./blog.html">BLOG</a>
+                  </li>
+                  <li class="header__list-item">
+                    <a class="header__list-link" href="./contact.html">CONTACT</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__menu">
+              <div class="header__menu-item">
+                <a class="header__menu-link" href="./register.html"
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <g>
+                      <g>
+                        <path
+                          fill="#29282d"
+                          d="M20 19.998h-1.563c0-4.652-3.785-8.436-8.437-8.436-4.653 0-8.438 3.784-8.438 8.436H0c0-2.67 1.04-5.181 2.929-7.07a9.958 9.958 0 0 1 3.8-2.384 5.779 5.779 0 0 1-2.51-4.764A5.788 5.788 0 0 1 9.999 0a5.788 5.788 0 0 1 5.782 5.781c0 1.975-.995 3.72-2.51 4.764a9.958 9.958 0 0 1 3.8 2.384A9.935 9.935 0 0 1 20 19.998zm-10-10a4.224 4.224 0 0 0 4.219-4.218 4.223 4.223 0 0 0-4.22-4.219 4.223 4.223 0 0 0-4.218 4.22A4.224 4.224 0 0 0 10 9.998z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="header__menu-item">
+                <a class="header__menu-link" href=""
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <g>
+                      <g>
+                        <path
+                          fill="#29282d"
+                          d="M19.892 19.286l-.59.589a.416.416 0 0 1-.588 0l-5.81-5.81A7.879 7.879 0 0 1 7.93 15.83c-4.366 0-7.917-3.552-7.917-7.916 0-4.366 3.551-7.917 7.917-7.917 4.365 0 7.916 3.55 7.916 7.917a7.878 7.878 0 0 1-1.765 4.973l5.81 5.81a.416.416 0 0 1 0 .589zM14.181 7.914a6.257 6.257 0 0 0-6.25-6.25 6.257 6.257 0 0 0-6.25 6.25 6.256 6.256 0 0 0 6.25 6.25 6.257 6.257 0 0 0 6.25-6.25z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="header__menu-item">
+                <a class="header__menu-link" href="#"
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <g>
+                      <g>
+                        <path
+                          fill="#29282d"
+                          d="M17.777 11.803a228.502 228.502 0 0 1-4.216 4.966c-2.682 3.056-3.065 3.225-3.449 3.225h-.17c-.383 0-.809-.169-3.492-3.183-1.405-1.57-3.108-3.565-4.215-4.965C-.235 8.748-.192 6.2.276 4.63.957 2.254 2.959.81 4.449.26c1.703-.553 3.747 0 5.578 1.57C11.858.217 13.902-.378 15.605.217c1.49.508 3.492 1.951 4.173 4.37.469 1.57.469 4.118-2.001 7.215zm.426-6.706c-.511-1.782-2.002-2.843-3.109-3.268-1.234-.424-2.895.213-4.428 1.655-.043.086-.128.128-.213.17a.846.846 0 0 1-1.065-.126C7.856 2.042 6.195 1.405 4.96 1.873c-1.107.381-2.598 1.442-3.108 3.224-.511 1.74.085 3.693 1.703 5.687 1.959 2.462 5.322 6.324 6.472 7.386 1.15-1.062 4.514-4.924 6.473-7.386 1.618-1.994 2.214-3.989 1.703-5.686z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+                <div class="header__menu-num">3</div>
+              </div>
+              <div class="header__menu-item">
+                <a class="header__menu-link" href="#"
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                    <g>
+                      <g>
+                        <path
+                          fill="#29282d"
+                          d="M17.436 19.997c-1.513 0-2.744-1.221-2.744-2.724 0-1.502 1.23-2.725 2.744-2.725 1.513 0 2.743 1.223 2.743 2.725 0 1.503-1.23 2.724-2.743 2.724zm0-3.814c-.606 0-1.098.49-1.098 1.09 0 .6.492 1.09 1.098 1.09.605 0 1.097-.49 1.097-1.09 0-.6-.492-1.09-1.097-1.09zm1.756-2.806H6.379a.822.822 0 0 1-.8-.628L2.902 1.634H.837A.82.82 0 0 1 .014.817a.82.82 0 0 1 .823-.818h2.716c.38 0 .712.26.8.628l.741 3.077h16.1c.254 0 .493.116.649.314a.815.815 0 0 1 .15.7l-2.002 8.038a.822.822 0 0 1-.8.62zM7.029 11.742h11.519l1.595-6.402H5.488zm.447 8.255c-1.513 0-2.743-1.221-2.743-2.724 0-1.502 1.23-2.725 2.743-2.725s2.744 1.223 2.744 2.725c0 1.503-1.23 2.724-2.744 2.724zm0-3.814c-.605 0-1.097.49-1.097 1.09 0 .6.492 1.09 1.097 1.09.606 0 1.098-.49 1.098-1.09 0-.6-.492-1.09-1.098-1.09z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+                <div class="header__menu-num">3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="breadcrumbs">
+          <div class="breadcrumbs__container">
+            <div class="container">
+              <h3 class="breadcrumbs__title">LOG IN</h3>
+              <div class="breadcrumbs__list">
+                <a class="breadcrumbs__item" href="./index.html">Home</a>
+                <a class="breadcrumbs__item" href="">Log in</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="login">
+          <div class="container">
+            <form class="login__form" action="">
+              <div class="login__nav">
+                <a class="login__nav-link" href="./register.html">REGISTER</a>
+                <p class="login__nav-text">LOGIN</p>
+              </div>
+              <div class="login__username">
+                <p class="login__text">Username or email address*</p>
+                <input class="login__input" type="text" />
+              </div>
+              <div class="login__password">
+                <p class="login__text">Password*</p>
+                <input class="login__input" type="password" />
+              </div>
+              <div class="login__submit">
+                <div class="login__check">
+                  <input class="login__checkbox" type="checkbox" />
+                  <p class="login__text">Remember me</p>
+                </div>
+                <input class="login__btn" type="submit" value="LOG IN" />
+                <a class="login__lost" href="">Lost your password?</a>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__contant">
+              <a class="footer__contant-logo" href="./index.html">
+                <img class="footer__logo" src="./assets/img/footer_logo.webp" alt="footer logo" />
+              </a>
+
+              <div class="footer__contant-content">
+                <a class="footer__adress" href="https://goo.gl/maps/LVFMTo2FL1HLJFUv6">No. 342 - London Oxford Street, 012 United States</a>
+                <a class="footer__email" href="mailto:Youremail@gmail.com">Youremail@gmail.com</a>
+                <a class="footer__phone" href="tel:+02838388393">+0283 838 8393</a>
+              </div>
+              <div class="footer__contant-social">
+                <a class="footer__contant-link" href="https://rkn.gov.ru/images/news/image34253.jpg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 17">
+                    <path
+                      d="M9.594 9.563l.492-3.079H7.027V4.488c0-.84.426-1.66 1.797-1.66h1.39V.207S8.955 0 7.747 0c-2.516 0-4.16 1.473-4.16 4.14v2.344h-2.8v3.079h2.8V17h3.441V9.562zm0 0"
+                      fill="#8d8d8d"
+                    />
+                  </svg>
+                </a>
+                <a class="footer__contant-link" href="https://rkn.gov.ru/images/news/image34253.jpg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path
+                      d="M14.355 4.742c.012.14.012.285.012.426 0 4.336-3.3 9.328-9.332 9.328A9.266 9.266 0 0 1 0 13.027c.266.028.52.04.793.04 1.531 0 2.941-.52 4.07-1.403a3.286 3.286 0 0 1-3.066-2.273c.203.03.406.05.621.05.293 0 .586-.039.86-.113a3.278 3.278 0 0 1-2.63-3.215V6.07c.438.246.946.399 1.485.418a3.278 3.278 0 0 1-1.461-2.73c0-.61.16-1.168.445-1.656a9.315 9.315 0 0 0 6.762 3.43 3.676 3.676 0 0 1-.082-.75 3.277 3.277 0 0 1 3.277-3.278c.946 0 1.797.394 2.399 1.035a6.554 6.554 0 0 0 2.082-.793 3.285 3.285 0 0 1-1.442 1.809A6.67 6.67 0 0 0 16 3.047a7.059 7.059 0 0 1-1.645 1.695zm0 0"
+                      fill="#8d8d8d"
+                    />
+                  </svg>
+                </a>
+                <a class="footer__contant-link" href="https://rkn.gov.ru/images/news/image34253.jpg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16">
+                    <path
+                      d="M3.133 14H.23V4.652h2.903zM1.68 3.379c-.926 0-1.68-.77-1.68-1.7a1.682 1.682 0 0 1 3.363 0c0 .93-.754 1.7-1.683 1.7zM13.996 14h-2.894V9.45c0-1.083-.024-2.473-1.512-2.473-1.508 0-1.738 1.175-1.738 2.394V14H4.953V4.652h2.781V5.93h.043c.387-.735 1.332-1.512 2.746-1.512 2.938 0 3.477 1.934 3.477 4.45V14zm0 0"
+                      fill="#8d8d8d"
+                    />
+                  </svg>
+                </a>
+                <a class="footer__contant-link" href="https://rkn.gov.ru/images/news/image34253.jpg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 15">
+                    <path
+                      d="M15 7.672c0 4.144-2.977 7.094-7.379 7.094C3.406 14.766 0 11.52 0 7.5S3.406.234 7.621.234c2.055 0 3.781.72 5.113 1.903L10.66 4.039C7.945 1.54 2.898 3.414 2.898 7.5c0 2.535 2.125 4.586 4.723 4.586 3.02 0 4.152-2.059 4.328-3.129H7.621v-2.5h7.258c.07.371.121.73.121 1.215zm0 0"
+                      fill="#8d8d8d"
+                    />
+                  </svg>
+                </a>
+                <a class="footer__contant-link" href="https://rkn.gov.ru/images/news/image34253.jpg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16">
+                    <path
+                      d="M6.375.203C3.168.203 0 2.34 0 5.801 0 8 1.238 9.25 1.988 9.25c.309 0 .489-.863.489-1.105 0-.293-.743-.91-.743-2.122 0-2.511 1.914-4.293 4.387-4.293 2.129 0 3.703 1.211 3.703 3.434 0 1.656-.664 4.77-2.82 4.77-.777 0-1.445-.563-1.445-1.368 0-1.183.824-2.324.824-3.543 0-2.07-2.934-1.695-2.934.805 0 .524.067 1.106.301 1.586-.43 1.856-1.313 4.621-1.313 6.531 0 .594.086 1.172.141 1.766.106.117.055.105.215.047 1.574-2.156 1.52-2.578 2.23-5.403.387.73 1.38 1.125 2.168 1.125C10.508 11.48 12 8.246 12 5.332 12 2.227 9.32.203 6.375.203zm0 0"
+                      fill="#8d8d8d"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="footer__useful-links">
+              <h5 class="footer__subtitle">Useful Links</h5>
+              <div class="footer__links">
+                <a class="footer__link-item" href="./contact.html">About Us</a>
+                <a class="footer__link-item" href="#">Privacy Policy</a>
+                <a class="footer__link-item" href="#">Terms & Conditions</a>
+                <a class="footer__link-item" href="#">Contact Us</a>
+                <a class="footer__link-item" href="#">Help & Support</a>
+              </div>
+            </div>
+            <div class="footer__account">
+              <h5 class="footer__subtitle">My Account</h5>
+              <div class="footer__links">
+                <a class="footer__link-item" href="./404-error.html">My Account</a>
+                <a class="footer__link-item" href="#">My Cart</a>
+                <a class="footer__link-item" href="#">My WIshlist</a>
+                <a class="footer__link-item" href="./register.html">Registration</a>
+                <a class="footer__link-item" href="#">Check Out</a>
+              </div>
+            </div>
+            <div class="footer__subscribe">
+              <h5 class="footer__subtitle">Subscribe Our Newsletter</h5>
+              <p class="footer__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis ipsum suspendisse ultrices gravida.
+              </p>
+              <form class="footer__form" action="">
+                <input class="footer__input" placeholder="Your email address" type="text" />
+                <button class="footer__btn">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copyright">© 2019 CodeAstrology. All Rights Reserved.</div>
+            <div class="footer__payments">
+              <p class="footer__payments-text">We Accept</p>
+              <img class="footer__payments-img" src="./assets/img/icons/mastercard.webp" alt="mastercard" />
+              <img class="footer__payments-img" src="./assets/img/icons/visa.webp" alt="visa" />
+              <img class="footer__payments-img" src="./assets/img/icons/paypal.webp" alt="paypal" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
